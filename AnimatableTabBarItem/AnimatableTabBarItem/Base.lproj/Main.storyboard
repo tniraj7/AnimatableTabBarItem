@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RRk-8J-uov">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Browse-->
+        <scene sceneID="Yk9-Il-9n7">
+            <objects>
+                <viewController id="rpT-st-Nmb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NLg-z8-2ov">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.73490121756027393" blue="0.44605407244383571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5wH-l6-Mb0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Browse" largeTitleDisplayMode="always" id="CnR-62-DNT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEz-Zf-EBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="868.52678571428567"/>
+        </scene>
+        <!--Playlist-->
+        <scene sceneID="zDz-Cg-U9i">
+            <objects>
+                <viewController id="FnQ-ed-sRR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAB-tR-veX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.16704040865344727" blue="0.41807466889705014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Zyb-3I-APB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Playlist" largeTitleDisplayMode="always" id="B4U-Ku-0OK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKZ-Gy-PtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Cd-l0-R2R">
+            <objects>
+                <tabBarController id="RRk-8J-uov" customClass="ViewController" customModule="AnimatableTabBarItem" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U7u-qT-6aM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.95072135570000005" green="0.94481625410000003" blue="0.95662645729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PmW-me-chd" kind="relationship" relationship="viewControllers" id="32k-rb-bU9"/>
+                        <segue destination="pZf-U0-P1z" kind="relationship" relationship="viewControllers" id="UbS-SL-f0c"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZB-bO-9dd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497" y="380"/>
+        </scene>
+        <!--Play-->
+        <scene sceneID="o9u-sy-16r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PmW-me-chd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Play" image="play.rectangle.fill" catalog="system" id="BQI-4m-U6P"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="weB-fY-cfV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FnQ-ed-sRR" kind="relationship" relationship="rootViewController" id="yjJ-wh-13b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OK4-mI-lHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.55072463768124" y="0.0"/>
+        </scene>
+        <!--Folders-->
+        <scene sceneID="Yuj-c0-FZx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pZf-U0-P1z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Folders" image="folder.fill" catalog="system" id="eNw-9f-R3h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ZZF-yU-rbn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rpT-st-Nmb" kind="relationship" relationship="rootViewController" id="TfO-Ae-1ag"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0C6-dh-Y44" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="868.52678571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder.fill" catalog="system" width="128" height="95"/>
+        <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
